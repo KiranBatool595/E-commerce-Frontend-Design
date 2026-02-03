@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ecommerce Front-End Design</title>
+    <link rel="icon" href="icon.2.png">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- logo name and icon -->
+        <div class="logo-section">
+            <div class="logo-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <div class="brand-name">Brand</div>
+        </div>
+
+        <!-- search section with category and button -->
+        <div class="search-section">
+            <input type="text" class="search-input" placeholder="Search">
+            <select id="category-dropdown">
+                <option type="dropdown">All category</option>
+                <option type="dropdown">Electronics</option>
+                <option type="dropdown">Fashion</option>
+                <option type="dropdown">Home & Garden</option>
+                <option type="dropdown">Sports</option>
+            </select>
+            <button class="search-button">Search</button>
+        </div>
+
+        <!-- user section: profile, Message, Orders and My cart -->
+        <div class="user-section">
+            <a href="#" class="section-item">
+                <i class="fa-solid fa-user"></i>
+                <span class="section-label">Profile</span>
+            </a>
+            <a href="#" class="section-item">
+                <i class="fa-regular fa-message"></i>
+                <span class="section-label">Message</span>
+            </a>
+            <a href="#" class="section-item">
+                <i class="fa-solid fa-heart"></i>
+                <span class="section-label">Orders</span>
+            </a>
+            <a href="#" class="section-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="section-label">My cart</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <!--lift side navbar  -->
+        <div class="nav-left">
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    ☰ All category
+                </div>
+                <div class="dropdown-menu">
+                    <a href="#">All category</a>
+                    <a href="#">Electronics</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Home & Garden</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Books</a>
+                </div>
+            </div>
+            <a href="#" class="nav-item">Hot offers</a>
+            <a href="#" class="nav-item">Gift boxes</a>
+            <a href="#" class="nav-item">Projects</a>
+            <a href="#" class="nav-item">Menu item</a>
+            <select id="nav-help">
+                <option value="dropdown">Help</option>
+                <option value="dropdown">Help</option>
+                <option value="dropdown">Help</option>
+                <option value="dropdown">Help</option>
+            </select>
+        </div>
+
+        <!-- right side navbar -->
+        <div class="nav-right">
+            <div class="language-selector">
+                <select class="dropdown">
+                    <option type="dropdown">English, USD</option>
+                    <option type="dropdown">English, USD</option>
+                    <option type="dropdown">English, USD</option>
+                    <option type="dropdown">English, USD</option>
+                </select>
+            </div>
+            <div class="ship-to">
+                <div class="flag-icon"></div>
+                <select class="dropdown">
+                    <option type="dropdown">Ship to</option>
+                    <option type="dropdown">Ship to</option>
+                    <option type="dropdown">Ship to</option>
+                    <option type="dropdown">Ship to</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Left Sidebar Categories -->
+            <div class="left-sidebar">
+                <ul>
+                    <li><a href="#" class="category-item" style="background-color: rgb(206, 209, 214); color: rgba(0, 0, 0, 0.966); font-weight: 500;">Automobiles</a></li>
+                    <li><a href="#" class="category-item">Clothes and wear</a></li>
+                    <li><a href="#" class="category-item">Home interiors</a></li>
+                    <li><a href="#" class="category-item">Computer and tech</a></li>
+                    <li><a href="#" class="category-item">Tools, equipments</a></li>
+                    <li><a href="#" class="category-item">Sports and outdoor</a></li>
+                    <li><a href="#" class="category-item">Animal and pets</a></li>
+                    <li><a href="#" class="category-item">More category</a></li>
+                </ul>
+            </div>
+
+            <!-- Center content -->
+            <div class="center-section">
+                <div class="center-content">
+                    <h2>Latest trending</h2>
+                    <h1>Electronic items</h1>
+                    <button class="learn-more-btn">Learn more</button>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="right-sidebar">
+                <!-- User Card -->
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p>Hi, user<br>let's get started</p>
+                    </div>
+                    <button class="signup-btn">Join now</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+
+                <div class="promo-card orange">
+                    Get US $10 off<br>with a new<br>supplier
+                </div>
+
+                <div class="promo-card teal">
+                    Send quotes with<br>supplier<br>preferences
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Suppliers section -->
+    <section class="suppliers-section">
+        <div class="suppliers-container">
+            <h2 class="suppliers-title">Suppliers by region</h2>
+
+            <div class="suppliers-grid">
+                <!-- Row 1 -->
+                <div class="supplier-item">
+                    <img src="Arabic-Emirates-flag.png" alt="Australia Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Australia</div>
+                        <a href="#" class="supplier-link">shopname.ae</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="Australia-flag.png" alt="Australia Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Australia</div>
+                        <a href="#" class="supplier-link">shopname.ae</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="United-States-flag.png" alt="USA Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">United States</div>
+                        <a href="#" class="supplier-link">shopname.ae</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="russia-flag.png" alt="Russia Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Russia</div>
+                        <a href="#" class="supplier-link">shopname.ru</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="italy-flag.png" alt="Italy Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Italy</div>
+                        <a href="#" class="supplier-link">shopname.it</a>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="supplier-item">
+                    <img src="denmark-flag.png" alt="Denmark Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Denmark</div>
+                        <a href="#" class="supplier-link">denmark.com.dk</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="france-flag.png" alt="France Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">France</div>
+                        <a href="#" class="supplier-link">shopname.com.fr</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="Arabic-Emirates-flag.png" alt="Arabic-Emirates Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Arabic Emirates</div>
+                        <a href="#" class="supplier-link">shopname.ae</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="china-flag.png" alt="China Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">China</div>
+                        <a href="#" class="supplier-link">shopname.ae</a>
+                    </div>
+                </div>
+
+                <div class="supplier-item">
+                    <img src="uk-flag.png" alt="UK Flag" class="flag-img">
+                    <div class="supplier-info">
+                        <div class="country-name">Great Britain</div>
+                        <a href="#" class="supplier-link">shopname.co.uk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter subscription section -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2 class="newsletter-title">Subscribe on our newsletter</h2>
+            <p class="newsletter-description">Get daily news on upcoming offers from many suppliers all over the world</p>
+
+            <div class="newsletter-form">
+                <div class="email-input-section">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Email" class="newsletter-email" title="Inter Email">
+                </div>
+                <button class="newsletter-subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="brand-name">Brand</div>
+                </div>
+                <p class="footer-description">
+                    Best information about the company gies here but now lorem ipsum is
+                </p>
+                <!-- social media links and icon-->
+                <div class="social-icons">
+                    <!-- facebook -->
+                    <a href="#" class="social-icon" title="Facebook" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <!-- twitter -->
+                    <a href="#" class="social-icon" title="twitter" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <!-- linkedin -->
+                    <a href="#" class="social-icon" title="linkedin" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <!-- instagram -->
+                    <a href="#" class="social-icon" title="instagram" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <!-- youtube -->
+                    <a href="#" class="social-icon" title="youtube" id="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- footer column about us -->
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- footer column about Partnership -->
+            <div class="footer-column">
+                <h3>Partnership</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- footer column about Information -->
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- footer column about For users -->
+            <div class="footer-column">
+                <h3>For users</h3>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">My Orders</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get app</h3>
+                <div class="app-buttons">
+                    <!-- button 1 -->
+                    <a href="#" class="app-button">
+                        <i class="fa-brands fa-apple icon"></i>
+                        <div class="text">
+                            <span class="small">Download on the</span>
+                            <span class="large">App Store</span>
+                        </div>
+                    </a>
+
+                    <!-- button 2 -->
+                    <a href="#" class="app-button">
+                        <i class="fa-solid fa-play icon"></i>
+                        <div class="text">
+                            <span class="small">GET IT ON</span>
+                            <span class="large">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <div class="copyright">© 2023 Ecommerce.</div>
+            <div class="language-selector">
+                <img src="US flag.png" alt="US flag" class="flag">
+                <span>English</span>
+                <span>^</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
